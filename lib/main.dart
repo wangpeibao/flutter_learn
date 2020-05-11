@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/pages/learn_aboutdialog.dart';
+import 'package:flutter_learn/pages/learn_alertdialog.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/index": (context) => Index(),
         "/learn_aboutdialog": (context) => MyAboutDialog(),
+        "/learn_alertdialog": (context) => MyAlertDialog(),
       },
       localizationsDelegates: [
         //此处
@@ -45,7 +47,8 @@ class MyApp extends StatelessWidget {
 class Index extends StatelessWidget {
 
   var items = [
-    {"name": "AboutDialog", "next": "/learn_aboutdialog"}
+    {"name": "AboutDialog", "next": "/learn_aboutdialog"},
+    {"name": "AlertDialog", "next": "/learn_alertdialog"}
   ];
 
   @override
