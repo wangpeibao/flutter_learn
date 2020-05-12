@@ -3,6 +3,7 @@ import 'package:flutter_learn/pages/learn_aboutdialog.dart';
 import 'package:flutter_learn/pages/learn_alertdialog.dart';
 import 'package:flutter_learn/pages/learn_align.dart';
 import 'package:flutter_learn/pages/learn_animatedlist.dart';
+import 'package:flutter_learn/pages/learn_animatedswitcher.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         "/learn_aboutdialog": (context) => MyAboutDialog(),
         "/learn_alertdialog": (context) => MyAlertDialog(),
         "/learn_align": (context) => MyAlign(),
-        "/learn_animatelist": (context) => MyAnimatedList(),
+        "/learn_animatedlist": (context) => MyAnimatedList(),
+        "/learn_animatedswitcher": (context) => MyAnimatedSwitcher(),
       },
       localizationsDelegates: [
         //此处
@@ -54,7 +56,8 @@ class Index extends StatelessWidget {
     {"name": "AboutDialog", "next": "/learn_aboutdialog"},
     {"name": "AlertDialog", "next": "/learn_alertdialog"},
     {"name": "Align", "next": "/learn_align"},
-    {"name": "AnimatedList", "next": "/learn_animatelist"}
+    {"name": "AnimatedList", "next": "/learn_animatedlist"},
+    {"name": "AnimatedSwitcher", "next": "/learn_animatedswitcher"}
   ];
 
   @override
