@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/pages/learn_aboutdialog.dart';
 import 'package:flutter_learn/pages/learn_alertdialog.dart';
+import 'package:flutter_learn/pages/learn_align.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         "/index": (context) => Index(),
         "/learn_aboutdialog": (context) => MyAboutDialog(),
         "/learn_alertdialog": (context) => MyAlertDialog(),
+        "/learn_align": (context) => MyAlign(),
       },
       localizationsDelegates: [
         //此处
@@ -48,7 +50,8 @@ class Index extends StatelessWidget {
 
   var items = [
     {"name": "AboutDialog", "next": "/learn_aboutdialog"},
-    {"name": "AlertDialog", "next": "/learn_alertdialog"}
+    {"name": "AlertDialog", "next": "/learn_alertdialog"},
+    {"name": "Align", "next": "/learn_align"}
   ];
 
   @override
