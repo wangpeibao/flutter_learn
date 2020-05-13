@@ -11,10 +11,40 @@ class MyAppBar extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          Text("leading设置为backend回退，title设置名字"),
           ListTile(
             title: RaisedButton(
               onPressed: (){
+                Navigator.pushNamed(context, "/learn_appbar/appbar1");
               },
+              child: Text("简单appbar"),
+            ),
+          ),
+          Text("leading未设置，但是Scaffold设置Drawer()"),
+          ListTile(
+            title: RaisedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, "/learn_appbar/appbar2");
+              },
+              child: Text("简单appbar"),
+            ),
+          ),
+          Text("设置actions"),
+          ListTile(
+            title: RaisedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, "/learn_appbar/appbar3");
+              },
+              child: Text("设置actions"),
+            ),
+          ),
+          Text("设置bottom"),
+          ListTile(
+            title: RaisedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, "/learn_appbar/appbar4");
+              },
+              child: Text("设置bottom"),
             ),
           )
         ],

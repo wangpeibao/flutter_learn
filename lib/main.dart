@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/pages/appbar/appbar1.dart';
+import 'package:flutter_learn/pages/appbar/appbar2.dart';
+import 'package:flutter_learn/pages/appbar/appbar3.dart';
+import 'package:flutter_learn/pages/appbar/appbar4.dart';
 import 'package:flutter_learn/pages/learn_aboutdialog.dart';
 import 'package:flutter_learn/pages/learn_alertdialog.dart';
 import 'package:flutter_learn/pages/learn_align.dart';
@@ -35,7 +39,11 @@ class MyApp extends StatelessWidget {
         "/learn_align": (context) => MyAlign(),
         "/learn_animatedlist": (context) => MyAnimatedList(),
         "/learn_animatedswitcher": (context) => MyAnimatedSwitcher(),
-        "/learn_appbar": (context) => MyAppBar()
+        "/learn_appbar": (context) => MyAppBar(),
+        "/learn_appbar/appbar1": (context) => MyAppBar1(),
+        "/learn_appbar/appbar2": (context) => MyAppBar2(),
+        "/learn_appbar/appbar3": (context) => MyAppBar3(),
+        "/learn_appbar/appbar4": (context) => MyAppBar4(),
       },
       localizationsDelegates: [
         //此处

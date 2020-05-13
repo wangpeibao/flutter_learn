@@ -2,15 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class MyAppBar1 extends StatelessWidget{
+class MyAppBar2 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: BackButton(),
-        title: Text("AppBar"),
-        centerTitle: true,
+        title: Text("没有设置leading,设置Drawer"),
       ),
+      drawer: Drawer(),
     );
   }
 }
