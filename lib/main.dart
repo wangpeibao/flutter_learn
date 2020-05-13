@@ -9,6 +9,7 @@ import 'package:flutter_learn/pages/learn_align.dart';
 import 'package:flutter_learn/pages/learn_animatedlist.dart';
 import 'package:flutter_learn/pages/learn_animatedswitcher.dart';
 import 'package:flutter_learn/pages/learn_appbar.dart';
+import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         "/learn_appbar/appbar2": (context) => MyAppBar2(),
         "/learn_appbar/appbar3": (context) => MyAppBar3(),
         "/learn_appbar/appbar4": (context) => MyAppBar4(),
+        "/learn_sizelimitwidget": (context) => MySizeLimitWidget()
       },
       localizationsDelegates: [
         //此处
@@ -68,7 +70,8 @@ class Index extends StatelessWidget {
     {"name": "Align", "next": "/learn_align"},
     {"name": "AnimatedList", "next": "/learn_animatedlist"},
     {"name": "AnimatedSwitcher", "next": "/learn_animatedswitcher"},
-    {"name": "AppBar", "next": "/learn_appbar"}
+    {"name": "AppBar", "next": "/learn_appbar"},
+    {"name": "大小限制类组件", "next": "/learn_sizelimitwidget"}
   ];
 
   @override
