@@ -13,6 +13,7 @@ import 'package:flutter_learn/pages/learn_bottomnavigationbar.dart';
 import 'package:flutter_learn/pages/learn_card.dart';
 import 'package:flutter_learn/pages/learn_checkbox.dart';
 import 'package:flutter_learn/pages/learn_container.dart';
+import 'package:flutter_learn/pages/learn_progress.dart';
 import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -54,6 +55,7 @@ class MyApp extends StatelessWidget {
         "/learn_bottomnavigationbar": (context) => MyBottomBar(),
         "/learn_card": (context) => MyCard(),
         "/learn_checkbox": (context) => MyCheckBox(),
+        "/learn_progress": (context) => MyProgress()
       },
       localizationsDelegates: [
         //此处
@@ -83,7 +85,8 @@ class Index extends StatelessWidget {
     {"name": "Container", "next": "/learn_container"},
     {"name": "BottomNavigationBar", "next": "/learn_bottomnavigationbar"},
     {"name": "Card", "next": "/learn_card"},
-    {"name": "CheckBox", "next": "/learn_checkbox"}
+    {"name": "CheckBox", "next": "/learn_checkbox"},
+    {"name": "Progress", "next": "/learn_progress"}
   ];
 
   @override
