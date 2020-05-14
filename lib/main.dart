@@ -10,6 +10,7 @@ import 'package:flutter_learn/pages/learn_animatedlist.dart';
 import 'package:flutter_learn/pages/learn_animatedswitcher.dart';
 import 'package:flutter_learn/pages/learn_appbar.dart';
 import 'package:flutter_learn/pages/learn_bottomnavigationbar.dart';
+import 'package:flutter_learn/pages/learn_card.dart';
 import 'package:flutter_learn/pages/learn_container.dart';
 import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
         "/learn_sizelimitwidget": (context) => MySizeLimitWidget(),
         "/learn_container": (context) => MyContainer(),
         "/learn_bottomnavigationbar": (context) => MyBottomBar(),
+        "/learn_card": (context) => MyCard(),
       },
       localizationsDelegates: [
         //此处
@@ -77,7 +79,8 @@ class Index extends StatelessWidget {
     {"name": "AppBar", "next": "/learn_appbar"},
     {"name": "大小限制类组件", "next": "/learn_sizelimitwidget"},
     {"name": "Container", "next": "/learn_container"},
-    {"name": "BottomNavigationBar", "next": "/learn_bottomnavigationbar"}
+    {"name": "BottomNavigationBar", "next": "/learn_bottomnavigationbar"},
+    {"name": "Card", "next": "/learn_card"}
   ];
 
   @override
