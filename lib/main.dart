@@ -12,6 +12,7 @@ import 'package:flutter_learn/pages/learn_appbar.dart';
 import 'package:flutter_learn/pages/learn_bottomnavigationbar.dart';
 import 'package:flutter_learn/pages/learn_card.dart';
 import 'package:flutter_learn/pages/learn_checkbox.dart';
+import 'package:flutter_learn/pages/learn_columnrow.dart';
 import 'package:flutter_learn/pages/learn_container.dart';
 import 'package:flutter_learn/pages/learn_progress.dart';
 import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
@@ -55,7 +56,8 @@ class MyApp extends StatelessWidget {
         "/learn_bottomnavigationbar": (context) => MyBottomBar(),
         "/learn_card": (context) => MyCard(),
         "/learn_checkbox": (context) => MyCheckBox(),
-        "/learn_progress": (context) => MyProgress()
+        "/learn_progress": (context) => MyProgress(),
+        "/learn_columnrow": (context) => MyColumnRow()
       },
       localizationsDelegates: [
         //此处
@@ -86,7 +88,8 @@ class Index extends StatelessWidget {
     {"name": "BottomNavigationBar", "next": "/learn_bottomnavigationbar"},
     {"name": "Card", "next": "/learn_card"},
     {"name": "CheckBox", "next": "/learn_checkbox"},
-    {"name": "Progress", "next": "/learn_progress"}
+    {"name": "Progress", "next": "/learn_progress"},
+    {"name": "Column+Row", "next": "/learn_columnrow"}
   ];
 
   @override
