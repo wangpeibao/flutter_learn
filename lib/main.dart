@@ -3,6 +3,8 @@ import 'package:flutter_learn/pages/appbar/appbar1.dart';
 import 'package:flutter_learn/pages/appbar/appbar2.dart';
 import 'package:flutter_learn/pages/appbar/appbar3.dart';
 import 'package:flutter_learn/pages/appbar/appbar4.dart';
+import 'package:flutter_learn/pages/customscrollview/customscrollview1.dart';
+import 'package:flutter_learn/pages/customscrollview/customscrollview2.dart';
 import 'package:flutter_learn/pages/learn_aboutdialog.dart';
 import 'package:flutter_learn/pages/learn_alertdialog.dart';
 import 'package:flutter_learn/pages/learn_align.dart';
@@ -14,6 +16,7 @@ import 'package:flutter_learn/pages/learn_card.dart';
 import 'package:flutter_learn/pages/learn_checkbox.dart';
 import 'package:flutter_learn/pages/learn_columnrow.dart';
 import 'package:flutter_learn/pages/learn_container.dart';
+import 'package:flutter_learn/pages/learn_customscrollview.dart';
 import 'package:flutter_learn/pages/learn_progress.dart';
 import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -57,7 +60,10 @@ class MyApp extends StatelessWidget {
         "/learn_card": (context) => MyCard(),
         "/learn_checkbox": (context) => MyCheckBox(),
         "/learn_progress": (context) => MyProgress(),
-        "/learn_columnrow": (context) => MyColumnRow()
+        "/learn_columnrow": (context) => MyColumnRow(),
+        "/learn_customscrollview": (context) => MyCustomScrollView(),
+        "/learn_customscrollview/mix": (context) => MyCustomScrollView1(),
+        "/learn_customscrollview/appbar": (context) => MyCustomScrollView2()
       },
       localizationsDelegates: [
         //此处
@@ -89,7 +95,8 @@ class Index extends StatelessWidget {
     {"name": "Card", "next": "/learn_card"},
     {"name": "CheckBox", "next": "/learn_checkbox"},
     {"name": "Progress", "next": "/learn_progress"},
-    {"name": "Column+Row", "next": "/learn_columnrow"}
+    {"name": "Column+Row", "next": "/learn_columnrow"},
+    {"name": "CustomScrollView", "next": "/learn_customscrollview"}
   ];
 
   @override
