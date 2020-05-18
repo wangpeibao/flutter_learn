@@ -18,6 +18,7 @@ import 'package:flutter_learn/pages/learn_columnrow.dart';
 import 'package:flutter_learn/pages/learn_container.dart';
 import 'package:flutter_learn/pages/learn_customscrollview.dart';
 import 'package:flutter_learn/pages/learn_datatable.dart';
+import 'package:flutter_learn/pages/learn_divider.dart';
 import 'package:flutter_learn/pages/learn_progress.dart';
 import 'package:flutter_learn/pages/learn_sizelimitwidget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -65,7 +66,8 @@ class MyApp extends StatelessWidget {
         "/learn_customscrollview": (context) => MyCustomScrollView(),
         "/learn_customscrollview/mix": (context) => MyCustomScrollView1(),
         "/learn_customscrollview/appbar": (context) => MyCustomScrollView2(),
-        "/learn_datatable": (context) => MyDataTable()
+        "/learn_datatable": (context) => MyDataTable(),
+        "/learn_divider": (context) => MyDivider(),
       },
       localizationsDelegates: [
         //此处
@@ -99,7 +101,8 @@ class Index extends StatelessWidget {
     {"name": "Progress", "next": "/learn_progress"},
     {"name": "Column+Row", "next": "/learn_columnrow"},
     {"name": "CustomScrollView", "next": "/learn_customscrollview"},
-    {"name": "DataTable", "next": "/learn_datatable"}
+    {"name": "DataTable", "next": "/learn_datatable"},
+    {"name": "Divider", "next": "/learn_divider"},
   ];
 
   @override
