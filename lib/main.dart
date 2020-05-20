@@ -12,6 +12,7 @@ import 'package:flutter_learn/pages/learn_animatedlist.dart';
 import 'package:flutter_learn/pages/learn_animatedswitcher.dart';
 import 'package:flutter_learn/pages/learn_appbar.dart';
 import 'package:flutter_learn/pages/learn_bottomnavigationbar.dart';
+import 'package:flutter_learn/pages/learn_button.dart';
 import 'package:flutter_learn/pages/learn_card.dart';
 import 'package:flutter_learn/pages/learn_checkbox.dart';
 import 'package:flutter_learn/pages/learn_columnrow.dart';
@@ -70,6 +71,7 @@ class MyApp extends StatelessWidget {
         "/learn_datatable": (context) => MyDataTable(),
         "/learn_divider": (context) => MyDivider(),
         "/learn_drawer": (context) => MyDrawer(),
+        "/learn_button": (context) => MyButton()
       },
       localizationsDelegates: [
         //此处
@@ -105,7 +107,8 @@ class Index extends StatelessWidget {
     {"name": "CustomScrollView", "next": "/learn_customscrollview"},
     {"name": "DataTable", "next": "/learn_datatable"},
     {"name": "Divider", "next": "/learn_divider"},
-    {"name": "Drawer", "next": "/learn_drawer"}
+    {"name": "Drawer", "next": "/learn_drawer"},
+    {"name": "Button", "next": "/learn_button"}
   ];
 
   @override
